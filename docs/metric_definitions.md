@@ -18,3 +18,13 @@ Sum of `sale_price` from `order_items`, grouped by product. Joined to `products`
 
 ## Average items per order
 Average of `num_of_item` from `orders`
+
+## Customer Summary (Feature Table)
+One row per user_id, built from order-level totals.
+Includes:
+- num_orders
+- total_spend
+- avg_order_value
+- first_order_date / last_order_date
+- days_since_last_order (recency)
+Purpose: reusable analytics + ML features.
